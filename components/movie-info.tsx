@@ -1,6 +1,5 @@
+import { API_URL } from "./../app/constants";
 import style from "../styles/movie-info.module.css";
-
-const API_URL: string = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
 export async function getMovie(id: string) {
   await new Promise((resolve) => setTimeout(resolve, 2000));

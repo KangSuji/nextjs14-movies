@@ -1,6 +1,5 @@
 import style from "../styles/movie-videos.module.css";
-
-const API_URL: string = "https://nomad-movies.nomadcoders.workers.dev/movies";
+import { API_URL } from "./../app/constants";
 
 async function getVideos(id: string) {
   await new Promise((resolve) => setTimeout(resolve, 2000));
